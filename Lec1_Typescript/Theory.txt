@@ -1,0 +1,177 @@
+npm install -g typescript for downloading typescript globally
+ npx tsc --init for package of tcs -> tsconfig 
+  npx tsc -b for running
+
+
+  hamko jabh bhi kuch bhio save karna hai hamko npx tsc -b  ye likhna padega aur build karke phir node index2.js then print 10
+
+  typescript mei clg nhi hoga js mei hoga
+
+✅ TypeScript → Error (compile time)
+❌ JavaScript → Bug (runtime)
+
+ Bilkul 👍
+Main isko **proper exam-ready NOTES** ke form me, **clean English + easy Hinglish explanation** ke saath likh raha hoon.
+Tum isse **direct notebook / PDF / revision** me use kar sakte ho.
+
+---
+
+# 📘 TypeScript – Introduction (Notes)
+
+## 🔹 What is TypeScript?
+
+TypeScript is a **statically typed superset of JavaScript** developed by Microsoft.
+It adds **types** to JavaScript so that **errors can be detected at compile time instead of runtime**.
+
+---
+
+## 🔹 Static Typing vs Dynamic Typing
+
+### 🟢 Static Typed Language (TypeScript)
+
+* Data types are **checked at compile time**
+* Errors are detected **before execution**
+* More **safe, predictable, and reliable**
+
+Example:
+
+```ts
+let a: number = 5;
+a = "Ragni"; // ❌ Compile-time error
+```
+
+---
+
+### 🔴 Dynamic Typed Language (JavaScript, Python)
+
+* Data types are checked **at runtime**
+* Code runs even with wrong types
+* Errors appear **during execution (bugs)**
+
+Example:
+
+```js
+let a;
+a = 5;
+a = "Ragni"; // allowed
+```
+
+---
+
+## 🔹 Compile Time vs Runtime
+
+### 📌 Compile Time
+
+* Time when code is **checked and converted**
+* TypeScript errors are caught here
+* Code **does not run** if error exists
+
+### 📌 Runtime
+
+* Time when program **actually executes**
+* JavaScript bugs appear here
+* Program may crash or give wrong output
+
+---
+
+## 🔹 Disadvantage of JavaScript (Runtime Bugs)
+
+### Example:
+
+```js
+let a;
+
+function sum(a) {
+  return 5 + a;
+}
+
+console.log(sum()); 
+```
+
+### Output:
+
+```txt
+NaN
+```
+
+### ❓ Why NaN?
+
+* `a` is `undefined`
+* `5 + undefined = NaN`
+* **NaN is NOT an error, it is a BUG**
+* JavaScript does not stop execution
+
+➡️ Bug detected **only at runtime**
+
+---
+
+## 🔹 Runtime Bug vs Compile Time Error
+
+| Runtime Bug                | Compile Time Error          |
+| -------------------------- | --------------------------- |
+| Appears while program runs | Appears before program runs |
+| Hard to debug              | Easy to fix                 |
+| JavaScript issue           | TypeScript advantage        |
+| Can reach production       | Stops early                 |
+
+---
+
+## 🔹 Why TypeScript was Introduced?
+
+JavaScript allows:
+
+* Missing parameters
+* Wrong data types
+* Logical bugs at runtime
+
+### ✅ Solution: TypeScript
+
+TypeScript **wraps JavaScript with types** so that:
+
+* Wrong types are caught early
+* Bugs are converted into **compile-time errors**
+* Code becomes **safe and predictable**
+
+---
+
+## 🔹 Same Example in TypeScript
+
+```ts
+function sum(a: number): number {
+  return 5 + a;
+}
+
+sum(); // ❌ Compile-time error
+```
+
+✔️ Error is detected **before runtime**
+✔️ Bug is prevented
+
+---
+
+## 🔹 Final Conclusion (Very Important)
+
+> **JavaScript gives runtime bugs**
+> **TypeScript gives compile-time errors**
+
+> **TypeScript adds a type layer over JavaScript to catch errors early**
+
+---
+
+## 📝 One-Line Exam Answer
+
+> **TypeScript is a statically typed superset of JavaScript that detects errors at compile time to avoid runtime bugs.**
+
+---
+
+Agar chaho to next:
+👉 **Primitive Data Types – proper notes**
+👉 **Functions with types (most important)**
+👉 **MCQs + Interview questions**
+
+Bas bolo: **“next notes do”** 📘
+
+
+rootDir-> no root directory mtlb correct place
+rootDir mei location of type script filem-> npx tcs -b -> build tcs-> JavaScript ./src
+outDir-> location of build js file  ./dist
