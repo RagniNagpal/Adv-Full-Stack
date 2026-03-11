@@ -1,0 +1,33 @@
+cnpm create vite@latest
+build tool-> vite
+
+ES7 react redux: install rafce ke liye
+
+to start a react project -> npm run dev
+
+Features of react:
+1. React offers component based structure /architecture 
+components are small reusable piece of code jaise ki ham </componet> agar ham kahin bhi use karenge to har jagah chal jaegiii.....
+
+How many types of component do we have:
+-> We have two types of components 
+1. class component
+2. Functional component:theses are  JS functions which returns html like page
+
+rafce full form - React Arrow Function Component Export
+
+
+Code is jsx
+What is jsx-> Javascript xml
+jsx is XML syntax which look like html and we can embbed javascript expression directly inside it. 
+
+Diff bw html and jsx 
+html:
+1. class
+2. non-closing tag eg : <hr>, <br>, <img>
+3. write js inside html code is not possible <script> required then dom manupulation
+
+jsx:
+1. className
+2. every tag has a closing tag
+3. you can directly embedd js in code using curly brackets {}
