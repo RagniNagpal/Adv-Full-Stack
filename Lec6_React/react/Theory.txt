@@ -1,0 +1,16 @@
+Types of export :2
+1. Default export 
+2. Named export
+
+Default Export: only 1 default export in module
+2. can be given diff default name no problem 
+
+named: can add multiple by writing export infront of then and {} use to import
+2. diff name makes a problem must do {} writen with correct name
+
+Props: props stands for properties and it is used to pass data from parent to child components
+
+
+static website-> html,css
+dynamic-> state variable and state management
+regular variable and state variable
