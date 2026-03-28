@@ -1,0 +1,75 @@
+// this keyword
+
+// diff be call , apply,bind
+// function.call(obj,--- ) same apply aur bind syntax
+
+// call- 
+// 1. arguments are comma separated eq 10,7
+
+// apply-
+// 1. arguments are passed as array eq [1,2]
+
+// bind-
+// 1. comma separated and function directly call nhi karta  it returns a new function with this bind to new object
+
+// Hoisting :- 
+// It is a javascript default behaviour in which all the declaration moves to the top during memory creation phase.If var
+// iska variable, arrowfn , function ka bhi padhna h hoisting mei 
+// clg(a+10) nan
+// clg(a) undef
+// var a=10;
+
+
+// what if let or const in place of var
+// -> hoisting hoti hai par value assign nhi hoti errro come reference error
+// clg(a+10) nan
+// clg(a) undef
+// let a=10;
+
+
+// Closure:In javascript function remembers its lexical scope variably even after its execution because of closure inner function can access outer function variable even after its execution.
+
+// function outer(){
+//   let a=10;
+//   function inner(){
+//     a++;
+//     console.log(a);
+//   }
+// }
+
+
+//closure
+function outer() {
+    let count = 0;  // outer scope variable
+
+    function inner() {
+        count++;
+        console.log(count); // accessing outer variable
+    }
+
+    return inner;
+}
+
+const counter = outer();
+counter();
+
+//closure kitni baar create hota hai ...
+// closure har baar craete hota hai inner fn dobara bana to alg closutre  check eq 
+
+
+//virtual dom is light weight copy of actual dom 
+//Reconcilation padho
+//lomgest common ...............-> 
+// prefix + hashmap
+
+//
+// let user={
+//     name:"Ragni"
+//     greet:function(){
+//         console.log(hello ${this.name})
+//     }
+//     let greet=user.greet;
+//     greet();  //=>  output hello undefined..user.greet.bind(user)
+// }
+
+//explicitely bind,bind

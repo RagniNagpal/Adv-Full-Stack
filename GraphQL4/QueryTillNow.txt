@@ -1,0 +1,114 @@
+# query ExampleQuery($getUserId: ID!) {
+#   User(id: $getUserId) {
+#     name
+#     id
+#     posts {
+#       content
+#       likes
+#     }
+#   }
+# }
+# mutation {
+#   addUser(id:"4", name:"test", email:"test@gmail.com", phone:123, password:"123"){
+#     id
+#     email
+#   }
+# }
+
+mutation {
+  login(email:"test@gmail.com", password:"123")
+}
+
+
+# query {
+#   Users {
+#     name
+#     posts {
+#       content
+#     }
+#   }
+# }
+
+# query{
+#   Users{
+#     name
+#     posts{
+#       content
+#       likes
+#     }
+#   }
+# }
+
+# query{
+#   Users{
+#     id
+#     name
+#     posts{
+#       postId
+#       content
+#       likes
+#     }
+#   }
+# }
+
+
+# mutation {
+#   addUser(name:"riya", email:"riya@gmail.com", phone:987654321){
+#     id
+#     name
+#     email
+#     phone
+#   }
+# }
+
+# mutation{
+#   deleteUser(id:"4")
+# }
+
+# mutation {
+#   updateUser(id:"2", name:"Vamika Sharma", email:"vamika123@gmail.com"){
+#     id
+#     name
+#     email
+#     phone
+#   }
+# }
+
+# query Users {
+#   Users {
+    
+#   }
+# }
+
+
+
+
+
+aaj ka
+{
+  search(contains: "Ragni") {
+    __typename
+    ... on Book {
+      title
+    }
+    ... on Author {
+      name
+    }
+  }
+}
+
+
+{
+  "data": {
+    "search": [
+      {
+        "__typename": "Book",
+        "title": "physics by Ragni"
+      },
+      {
+        "__typename": "Author",
+        "name": "Ragni"
+      }
+    ]
+  }
+}

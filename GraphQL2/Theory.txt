@@ -1,0 +1,51 @@
+Apollo graphql server docs 
+npm install @apollo/server graphql
+in package.json do module
+ "start": "node index.js"
+ now npm start
+
+ Apollo server 
+ StartStandaloneServer-> sirf graphql ka server......iske saath koi aur server nhi hai ..........agar express ya spring boot to integrate baki sabh ke sath apollo server ko
+
+typeDefs is liek cschema
+querytype:
+entity par kya kya query run karsakte h 
+mutation: 
+resolvers : btana padhta hai ki kiske liye bna rhe ho is like a function 
+
+ typeDefs is string to backtract
+ Resolver:jo query ko implement karte hai
+
+ query userQuery {
+  Users{
+    name
+  }
+}
+ in server
+
+
+
+ //st1 first topic
+// GraphQl
+
+//What problem does graphql solved?
+//abb tak ham rest api use karte the....dikkat kya h phir  jab aham ek ka data nikalta hai pooor aaata hai name ke liye alag email ke liye alag problem is bandwidth .............jitna data utna bandwidth..cahahiye ek data tah abb overfetching or underfetching ho gyi .to solve this problem we use GraphQL.....taaki over aur under na ho 
+// Its a query language
+//GraphQL has only one single endpoint
+//single endpoint ka query return karet hai 
+
+//1. TypeDefination-> (sql mei table and non sql mei schema) its like a schema
+
+// Type User{
+//   id:ID
+//   name:string
+// }
+
+//Type Query: function(kon kon si queries run kar sakte hai  saari define)
+
+important
+query like rest api(get)
+mutation like rest api(post,put,delete,add ,update)
+
+iske baad authentication authorization 
+//we use context
